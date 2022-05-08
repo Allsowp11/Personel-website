@@ -25,10 +25,7 @@ export const Project = (data) => {
         })
     
     },[Projectlist])
-    const languages_values = [
-
-        
-    ]
+    
     
     return(
         <div className="space-y-10 px-5 lg:px-44 ">
@@ -43,8 +40,23 @@ export const Project = (data) => {
                             <p className="text-base text-[#c4c4c4] h-12 lg:w-56 w-44">
                                 {project.projectDescription.length > 48 ? `${project.projectDescription.substring(0,48)} ...` : `${project.projectDescription}` }
                             </p>
-                            <div>
-                                {project.projectLanguage}
+                            <div className="flex flex-row space-x-2">
+                                <div className="flex items-center">
+                                    <div className={` h-3 w-3 rounded-full   ${project.projectLanguage === "JavaScript" ? "bg-[#ffce3d]" : "" ||
+                                project.projectLanguage === "HTML" ? "bg-[#e44d26]" : "" ||
+                                project.projectLanguage === "CSS" ? "bg-[#2299f8]" : ""}
+                                `}>
+
+                                    </div>
+                                </div>
+                                <h1 
+                                className={project.projectLanguage === "JavaScript" ? "text-[#ffce3d]" : "" ||
+                                project.projectLanguage === "HTML" ? "text-[#e44d26]" : "" ||
+                                project.projectLanguage === "CSS" ? "text-[#2299f8]" : ""
+                                }>
+                                    
+                                    {project.projectLanguage}
+                                </h1>
                             </div>
                         </div>
                         <a href={project.projectURL} target="_blank" className="flex justify-center " style={{"transform": "rotate(90deg)"}}>

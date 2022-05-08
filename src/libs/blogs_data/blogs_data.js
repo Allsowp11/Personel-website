@@ -2,7 +2,12 @@ export const Blogs_data = [
      {
         id: 1,
         title: 'Lorem ipsum dolor sit amet',
-        category: 'development',
+        category:{
+          name:"development",
+          color:"text-[#3b82f6]"
+        },
+          
+        
         subCategory: ['frontend', 'ui/ux', 'design'],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         text: require('../markdowns_for_blogs/deneme.md'),

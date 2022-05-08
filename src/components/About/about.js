@@ -1,5 +1,5 @@
 export const About = () =>{
-    const texts = ["l am Ayberk Dulda. student of Küçükçalık high school from","I've been coding since 2019. I started  by writing simple applications (like a calculator) in python. I mostly write about websites or cyber-security these days. I am also interested in voice acting. I am improving my diction and vocal capacity. you can check my voice from youtube videos.","UX and UI website desings","Javascript (Node.js and Client-side)","Python (basic desktop apps)"]
+    const texts = ["l am Ayberk Dulda. student of Küçükçalık high school from","I've been coding since 2019. I started  by writing simple applications (like a calculator) in python. I mostly write about websites or cyber-security these days. You can look my","UX and UI website desings","Javascript (Node.js and Client-side)","Python (basic desktop apps)"]
     const Special = (info) =>{
         return(
             <div className="flex lg:space-x-2  space-x-3">
@@ -27,7 +27,7 @@ export const About = () =>{
                                 </h1>
                                 <div className="text-xl flex flex-col lg:space-y-3 space-y-5 text-[#b8b8b8] lg:text-left ">
                                     <h2 className=" text-xl ">{texts[0]} <span id="turkey">turkey</span></h2>
-                                    <p className=" text-lg">{texts[1]}</p>
+                                    <p className=" text-lg">{texts[1]} <a href="" className="text-[#2299f8] hover:underline hover:underline-offset-2">startups</a></p>
                                 </div>
                             </div>
                         </div>
