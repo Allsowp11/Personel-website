@@ -40,7 +40,7 @@ return(
 
 
         </textarea>
-        <button className=" font-bold text-lg text-[#c4c4c4] w-full p-2 border-b-4 border-legal_lime bg-[#262624] rounded-xl focus:outline-none">
+        <button id="contact" className=" font-bold text-lg text-[#c4c4c4] w-full p-2 border-b-4 border-legal_lime bg-[#262624] rounded-xl focus:outline-none">
             submit
         </button>
 
