@@ -11,23 +11,25 @@ export const Blog = () => {
     useEffect(() => {
         let blog1 = Blogs_data.find((blog) => blog.id === parseInt(id));
         if (blog1) {
-
+            setBlog(blog1)
         }
       }, []);
 
-    console.log(blog)
     return(
-        <div className='h-full'>
-            <div className='bg-[#141413] lg:px-20'>
-   
+        <div>
+            <div className='h-screen'>
+                <div className='bg-[#141413] lg:pt-44 h-[500px] 2xl:h-[700px] flex justify-center items-center'>
+                    <h1 className='text-2xl xl:text-3xl text-[#a7d129]'>
+                        {blog?.Canwrite ? "" : "Blog Yazılma sürecinde tahmini zaman(2gün)"}
+                    </h1>
+                </div>
+                <Footer/> 
             </div>
-            <Footer/>
             <a href="/blogs" id="arrow" className="top-10 left-10 absolute" >
                 <img fill="#ffffff" src="/images/arrow.svg"  className="h-16 w-16 rounded-full hover:bg-[#0a0a0a] hover:bg-opacity-75"/>
-            </a>   
+            </a> 
         </div>
-        
-
+    
     )
 
 }

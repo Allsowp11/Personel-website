@@ -1,5 +1,5 @@
 export const About = () =>{
-    const texts = ["l am Ayberk Dulda. student of Küçükçalık high school from","I've been coding since 2019. I started  by writing simple applications (like a calculator) in python. I mostly write about websites or cyber-security these days. You can look my","UX and UI website desings","Javascript (Node.js and Client-side)","Python (basic desktop apps)"]
+    const texts = ["l am Ayberk Dulda. student of Küçükçalık high school from","I've been coding since 2019. I started  by writing simple applications (like a calculator) in python. I mostly write about websites or cyber-security these days. l am learning Back-end technologies(Websocket, http). You can look my","UX and UI website desings","Javascript (Node.js and Client-side)","Python (basic desktop apps)"]
     const Special = (info) =>{
         return(
             <div className="flex lg:space-x-2  space-x-3">
@@ -14,9 +14,9 @@ export const About = () =>{
             <main className=" text-white flex  lg:text-5xl bg-[#141413] lg:pt-0 ">
                 <div id="About" className="w-full flex-col lg:px-5 flex lg:flex-row lg:pt-10 items-center lg:items-start space-y-3 lg:space-y-0">
                     <div  className="lg:w-1/2 lg:p-20 ">
-                        <img  className=" w-60 md:w-80 lg:w-full lg:rounded-2xl rounded-full lg:border-2 border-4 border-[#A7D129]" src="images/avatar.jpg" alt="" width="600"/>
+                        <img  className=" w-60 md:w-80 lg:w-full lg:rounded-2xl 2xl:rounded-full rounded-full lg:border-2 border-4 border-[#A7D129]" src="images/avatar.jpg" alt="" width="600"/>
                     </div>
-                    <div  className="lg:w-1/2 flex-col flex space-y-5 lg:space-y-4 lg:px-10 px-5 lg:pt-20">
+                    <div  className="lg:w-1/2 2xl:justify-center h-full flex-col flex space-y-5 lg:space-y-4 lg:px-10 px-5 lg:pt-20">
                         <div  className="flex flex-col lg:space-y-5 space-y-5">
                             <h1 className="lg:text-xl lg:text-5xl text-2xl text-[#A7D129] lg:text-left  text-center">
                             starts with depression...
@@ -27,11 +27,11 @@ export const About = () =>{
                                 </h1>
                                 <div className="text-xl flex flex-col lg:space-y-3 space-y-5 text-[#b8b8b8] lg:text-left ">
                                     <h2 className=" text-xl ">{texts[0]} <span id="turkey">turkey</span></h2>
-                                    <p className=" text-lg">{texts[1]} <a href="" className="text-[#2299f8] hover:underline hover:underline-offset-2">startups</a></p>
+                                    <p className=" text-lg">{texts[1]} <a href="/#startups" className="text-[#2299f8] hover:underline hover:underline-offset-2">startups</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:text-base  text-base lg:text-xl flex flex-col space-y-1 lg:space-y-0 items-start">
+                        <div  className="lg:text-base  text-base lg:text-xl flex flex-col space-y-1 lg:space-y-0 items-start">
                             <Special text={texts[2]}/>
                             <Special text={texts[3]}/>
                             <Special text={texts[4]}/>

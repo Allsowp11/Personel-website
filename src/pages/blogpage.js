@@ -14,10 +14,10 @@ export const Blogs = () =>{
     console.log(Api)
     return(
         <Layout>
-            <div className=" px-5 lg:pt-44 h-full w-full bg-[#141413]">
-                <div className='w-full space-y-10'>
+            <div className=" px-5 lg:pt-44 h-full 2xl:h-screen w-full bg-[#141413]">
+                <div className='w-full space-y-10 2xl:space-y-32'>
                     <h1 className="text-[#a7d129] grid place-items-center text-3xl md:text-3xl lg:text-4xl ">Blogs</h1>
-                    <div className="text-white  grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center" > 
+                    <div className="text-white  grid grid-cols-1 lg:grid-cols-flow gap-4 place-items-center" > 
                         {Blogs_data.map(blog => (
                             <div className='flex flex-col lg:space-y-0 space-y-10 hover:bg-[#1c1c1b] bg-[#262624] p-2 rounded-2xl'>
                                 <div className=' h-28 p-3 flex lg:flex-row flex-col space-y-3 lg:space-y-0 lg:justify-between justify-between'>
@@ -35,8 +35,13 @@ export const Blogs = () =>{
                                         {blog.description}...
                                     </a>
                                     <div className={`flex space-x-2 flex-row justify-between p-2`}>
-                                        <div className={` ${blog.category.color} text-lg`}>
-                                            {blog.category.name}
+                                        <div className='flex flex-row space-x-2'>
+                                            <div className={` ${blog.category.color} text-lg`}>
+                                                {blog.category.name}
+                                            </div>
+                                            <div className={` ${blog.Language.color} text-lg`}>
+                                                {blog.Language.name}
+                                            </div>
                                         </div>
                                         <a href={`/blog/${blog.id}`} target="_self" className="flex justify-start " style={{"transform": "rotate(90deg)"}}>
                                             <img src="/images/arrow.svg"/>

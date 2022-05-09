@@ -30,9 +30,9 @@ export const Project = (data) => {
     return(
         <div className="space-y-10 px-5 lg:px-44 ">
             <h1 className="text-[#a7d129] grid place-items-center text-3xl md:text-3xl lg:text-4xl ">Projects</h1>
-            <div id="Projects" className="lg:grid-cols-3 md:grid-cols-3 grid grid-cols-1 gap-4" > 
+            <div className="lg:grid-cols-3 md:grid-cols-3 grid grid-cols-1 gap-4" > 
                 {allah.map(project => (
-                    <div className="flex p-5  justify-between h-full bg-[#262624]  p-4 rounded-2xl">
+                    <div  className="flex p-5  justify-between h-full bg-[#262624]  p-4 rounded-2xl">
                         <div className="flex flex-col space-y-3 ">                               
                             <h1 className=" text-base text-[#A7D129]">
                                 {project.projectName.length >= 25 ? `${project.projectName.substring(0,25)}...` : `${project.projectName}`}

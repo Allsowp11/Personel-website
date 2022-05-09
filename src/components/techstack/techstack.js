@@ -12,6 +12,9 @@ export const TechStack = ()=>{
                 </a>
                 ))}
             </div>
+            <div id="Projects">
+
+            </div>
         </div>
     );
 

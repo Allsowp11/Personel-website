@@ -6,7 +6,7 @@ import { Project } from '../components/Projects/projects.js';
 import { useEffect, useState } from 'react';
 import { Contact } from '../components/Contact/Contact.js';
 import { GithubURL } from '../libs/apis/apis.js';
-
+import { Startups } from '../components/Startups/Startups.js';
 export const Main = () =>{
     const [Api, Setapi] = useState([])
     
@@ -21,6 +21,7 @@ export const Main = () =>{
             <Hero/>
             <About/>
             <div className='bg-[#141413] pb-10 space-y-20 flex flex-col '>
+                <Startups/>
                 <TechStack/>
                 <Project Api={Api}/>
                 <Contact/>
